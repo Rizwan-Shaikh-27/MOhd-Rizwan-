@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <link rel="stylesheet" href="heart.css">
+  <style>
+  body {
+    width: auto;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background: #ffa5a5;
+    background: linear-gradient(top, #ffa5a5 0%, #ffd3d3 100%);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        color: #ff007b;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0.8);
+        color: red;
+    }
+}
+
+.heart {
+    font-size: 350px;
+    color: #ff007b;
+    animation: pulse 1.5s infinite ease-in-out;
+    stroke-width: 5.3px;
+    text-shadow: 1px 0px 30px #d5093c;
+    transition: width 0.7s;
+}
+  </style>
+</head>
+
+<body>
+    <div class="heart">&#10084;
+    </div>
+</body>
+
+</html>
